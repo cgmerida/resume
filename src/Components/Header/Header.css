@@ -1,0 +1,29 @@
+.header-bg {
+  background: #ccc url('../../assets/img/bg.jpg') center top/cover no-repeat;
+  padding: 1cm;
+  display: flex;
+}
+
+.circle {
+  margin-right: 1cm;
+}
+
+.circle img {
+  width: 5cm;
+  border-radius: 50%;
+}
+
+.title-container {
+  width: 100%;
+  margin: auto;
+}
+
+.title-container * {
+  margin: 0.5rem 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-weight: normal;
+}
