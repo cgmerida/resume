@@ -1,0 +1,36 @@
+/* <a href='https://www.freepik.com/vectors/rss'>Rss vector created by freepik - www.freepik.com</a>         */
+li.icon-list {
+  list-style: none;
+  padding-left: 2rem;
+  position: relative;
+  height: fit-content;
+  margin-bottom: 1.1rem;
+  font-size: 1.1rem;
+}
+
+li.icon-list::before {
+  content: '';
+  position: absolute;
+  top: 2.5%;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+li.icon-list.li-pin::before {
+  background-image: url('../../assets/icons/pin.png');
+}
+
+li.icon-list.li-email::before {
+  background-image: url('../../assets/icons/email.png');
+}
+
+li.icon-list.li-phone::before {
+  background-image: url('../../assets/icons/phone.png');
+}
+
+li.icon-list.li-linkedin::before {
+  background-image: url('../../assets/icons/linkedin.png');
+}
