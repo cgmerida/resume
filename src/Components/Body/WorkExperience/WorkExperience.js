@@ -1,7 +1,7 @@
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 import './WorkExperience.css';
 
-const WorkExperience = ({ position, company, timePeriod, roles = [] }) => (
+const WorkExperience = ({ position, company, timePeriod, roles }) => (
   <div className="mb-5">
     <p className="no-margin">
       <strong>{position}</strong>
@@ -24,11 +24,7 @@ WorkExperience.propTypes = {
   position: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   timePeriod: PropTypes.string.isRequired,
-  roles: PropTypes.arrayOf(string.isRequired),
-};
-
-WorkExperience.defaultProps = {
-  roles: [],
+  roles: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default WorkExperience;
