@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  plugins: ['react'],
   extends: ['plugin:react/recommended', 'prettier', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
@@ -11,6 +12,19 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
-  rules: {},
+  rules: {
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'react/no-array-index-key': 'off',
+    'object-curly-newline': 'off',
+    'react/jsx-props-no-spreading': 'off',
+  },
 };
